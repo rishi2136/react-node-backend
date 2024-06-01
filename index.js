@@ -40,7 +40,7 @@ async function insertSlider() {
 app.get("/", (req, res) => {
   res.send("I am Home page")
 })
-app.get("/cabryder", () => {
+app.get("/cabryder", (req, res) => {
   res.send("I am Landing page");
 })
 

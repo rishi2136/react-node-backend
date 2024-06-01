@@ -36,8 +36,12 @@ async function insertSlider() {
 //   res.send("DB is initailize");
 // })
 
+
+app.get("/", (req, res) => {
+  res.send("I am Home page")
+})
 app.get("/cabryder", () => {
-  res.send("I am Home page");
+  res.send("I am Landing page");
 })
 
 app.get("/cabryder/service", async (req, res) => {
